@@ -1,0 +1,86 @@
+/* --- GENERAL STYLING --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #ff0040;
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ff0040;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff3366;
+}
+
+/* --- GAME MAP & DOLL --- */
+#map {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 20px auto;
+  border: 3px solid #ff0040;
+  background-color: #222;
+  overflow: hidden;
+}
+
+#mapImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#doll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 250px;
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+}
+
+#lightIndicator {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: green;
+  border: 2px solid #fff;
+  z-index: 3;
+}
+
+/* SCORE DISPLAY */
+#score {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  color: #888;
+}
+
+#betaMessage {
+  color: #f00;            /* red text for warning */
+  font-weight: bold;       /* make it stand out */
+  font-size: 14px;         /* adjust size as needed */
+  margin-top: 10px;        /* spacing from buttons */
+  text-align: center;      /* center it */
+}

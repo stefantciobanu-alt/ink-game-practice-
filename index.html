@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ink Game Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOGIN SCREEN -->
+  <div id="login">
+    <h1>Enter Roblox Username</h1>
+    <input type="text" id="username" placeholder="Roblox Username">
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <!-- GAME SELECTION HUB -->
+  <div id="gameSelect" style="display:none;">
+    <h1>Choose a Game</h1>
+    <button class="gameBtn" data-game="greenlight">Red Light / Green Light</button>
+    <button class="gameBtn" data-game="dalgona">Dalgona (Coming Soon)</button>
+    <button class="gameBtn" data-game="glassbridge">Glass Bridge (Coming Soon)</button>
+  </div>
+
+  <!-- GAME CONTAINER -->
+  <div id="gameContainer" style="display:none;">
+    <h1 id="gameTitle"></h1>
+    <div id="gameArea"></div>
+    <button id="backBtn">Back to Menu</button>
+  </div>
+
+  <footer>
+    <p>Version 0.0.1</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+  <!-- BETA MESSAGE -->
+  <p id="betaMessage">GAME IS STILL IN VERY EARLY BETA. EXPECT A LOT OF ERRORS.</p>
+</div>
